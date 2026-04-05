@@ -89,7 +89,7 @@ const createMockSession = (overrides: Record<string, unknown> = {}) => ({
 })
 
 const createRequest = (url: string, options?: RequestInit) =>
-  new Request(url, options)
+  new Request(url, options) as any
 
 const createParams = (token: string) =>
   Promise.resolve({ token })

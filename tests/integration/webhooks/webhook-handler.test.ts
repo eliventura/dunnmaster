@@ -74,7 +74,7 @@ describe('Stripe Webhook Handler', () => {
     it('returns 400 when signature header is missing', async () => {
       const response = validateSignatureHeader(undefined)
       expect(response.status).toBe(400)
-      expect(response.error.code).toBe('MISSING_SIGNATURE')
+      expect(response.error!.code).toBe('MISSING_SIGNATURE')
     })
   })
 

@@ -52,8 +52,8 @@ const createMockSession = (overrides: Record<string, unknown> = {}) => ({
     id: 'rc_001',
     business: {
       id: 'biz_001',
-      name: 'Test Business',
       brandingSettings: {
+        companyName: 'Test Business',
         logoUrl: 'https://example.com/logo.png',
         primaryColor: '#0066ff',
       },
@@ -106,7 +106,7 @@ describe('validatePaymentUpdateToken', () => {
 
     expect(result).not.toBeNull()
     expect(result?.recoveryCaseId).toBe('rc_001')
-    expect(result?.session.recoveryCase.business.name).toBe('Test Business')
+    expect(result?.session.recoveryCase.business.brandingSettings?.companyName).toBe('Test Business')
   })
 
   it('returns null for expired tokens', async () => {

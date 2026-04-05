@@ -66,9 +66,9 @@ describe('GET /api/dashboard/metrics', () => {
       .mockResolvedValueOnce(2) // failedThisMonth
 
     const response = await GET()
-    const body = await response.json()
+    const body = await response!.json()
 
-    expect(response.status).toBe(200)
+    expect(response!.status).toBe(200)
     expect(body.data).toEqual({
       mrrAtRisk: 7998,
       mrrRecovered: 1500,
@@ -85,9 +85,9 @@ describe('GET /api/dashboard/metrics', () => {
     mockAuth.mockResolvedValue(null)
 
     const response = await GET()
-    const body = await response.json()
+    const body = await response!.json()
 
-    expect(response.status).toBe(401)
+    expect(response!.status).toBe(401)
     expect(body.error.code).toBe('UNAUTHORIZED')
   })
 })

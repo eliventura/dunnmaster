@@ -16,6 +16,7 @@ export const createMockInvoice = (overrides: Record<string, unknown> = {}) => ({
   amount_due: 4999,
   currency: 'usd',
   status: 'open',
+  customer_email: 'customer@example.com',
   charge: {
     failure_code: 'insufficient_funds',
     failure_message: 'Your card has insufficient funds.',

@@ -58,7 +58,7 @@ describe('Stripe Connect OAuth', () => {
       // The route handler should check session and return 401
       const response = simulateAuthGuard(session)
       expect(response.status).toBe(401)
-      expect(response.error.code).toBe('UNAUTHORIZED')
+      expect(response.error!.code).toBe('UNAUTHORIZED')
     })
 
     it('returns 409 when business already has Stripe connected', async () => {
@@ -297,7 +297,7 @@ function buildConnectUrl(state: string): string {
   return `https://connect.stripe.com/oauth/authorize?${params.toString()}`
 }
 
-function simulateAuthGuard(session: unknown) {
+function simulateAuthGuard(session: unknown): { status: number; error: { code: string; message: string } | null } {
   if (!session) {
     return { status: 401, error: { code: 'UNAUTHORIZED', message: 'Authentication required' } }
   }

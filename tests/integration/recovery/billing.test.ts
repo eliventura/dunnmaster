@@ -209,9 +209,9 @@ describe('POST /api/billing/change-plan validation', () => {
     })
 
     const response = await POST(request as any)
-    const data = await response.json()
+    const data = await response!.json()
 
-    expect(response.status).toBe(400)
+    expect(response!.status).toBe(400)
     expect(data.error.code).toBe('INVALID_TIER')
   })
 
@@ -225,9 +225,9 @@ describe('POST /api/billing/change-plan validation', () => {
     })
 
     const response = await POST(request as any)
-    const data = await response.json()
+    const data = await response!.json()
 
-    expect(response.status).toBe(400)
+    expect(response!.status).toBe(400)
     expect(data.error.code).toBe('SAME_TIER')
   })
 })
