@@ -1,3 +1,22 @@
 node_modules
+.next
+out
+build
+dist
+coverage
 
 /src/generated/prisma
+
+.env
+.env.local
+.env.*.local
+
+*.log
+npm-debug.log*
+
+.DS_Store
+Thumbs.db
+*.swp
+*.tmp
+
+.vercel
