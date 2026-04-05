@@ -79,6 +79,7 @@ export const changePlan = async (businessId: string, newTier: PlanTier) => {
   return {
     previousTier: plan.tier,
     newTier,
+    effectiveAt: new Date(),
   }
 }
 

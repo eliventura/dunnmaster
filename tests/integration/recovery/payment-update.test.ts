@@ -1,3 +1,7 @@
+/**
+ * @jest-environment node
+ */
+
 import { GET } from '@/app/api/payment-update/[token]/route'
 import { POST } from '@/app/api/payment-update/[token]/confirm/route'
 
@@ -10,7 +14,14 @@ const mockPrisma = {
   },
 }
 
-jest.mock('@/lib/prisma', () => ({ prisma: mockPrisma }))
+jest.mock('@/lib/prisma', () => ({
+  prisma: {
+    paymentUpdateSession: {
+      findUnique: (...args: unknown[]) => mockPrisma.paymentUpdateSession.findUnique(...args),
+      update: (...args: unknown[]) => mockPrisma.paymentUpdateSession.update(...args),
+    },
+  },
+}))
 
 const mockStripe = {
   setupIntents: {
@@ -25,7 +36,20 @@ const mockStripe = {
   },
 }
 
-jest.mock('@/lib/stripe', () => ({ stripe: mockStripe }))
+jest.mock('@/lib/stripe', () => ({
+  stripe: {
+    setupIntents: {
+      create: (...args: unknown[]) => mockStripe.setupIntents.create(...args),
+      retrieve: (...args: unknown[]) => mockStripe.setupIntents.retrieve(...args),
+    },
+    customers: {
+      update: (...args: unknown[]) => mockStripe.customers.update(...args),
+    },
+    invoices: {
+      pay: (...args: unknown[]) => mockStripe.invoices.pay(...args),
+    },
+  },
+}))
 
 jest.mock('jose', () => ({
   SignJWT: jest.fn(),
@@ -55,6 +79,7 @@ const createMockSession = (overrides: Record<string, unknown> = {}) => ({
       name: 'Acme Corp',
       stripeAccountId: 'acct_001',
       brandingSettings: {
+        companyName: 'Acme Corp',
         logoUrl: 'https://example.com/logo.png',
         primaryColor: '#0066ff',
       },
@@ -176,6 +201,7 @@ describe('POST /api/payment-update/[token]/confirm', () => {
     )
     expect(mockStripe.invoices.pay).toHaveBeenCalledWith(
       'in_001',
+      {},
       { stripeAccount: 'acct_001' }
     )
     expect(mockPrisma.paymentUpdateSession.update).toHaveBeenCalledWith({

@@ -29,6 +29,7 @@ jest.mock('@/emails/dunning-email', () => ({
   }),
 }))
 
+const MOCK_NOW = new Date('2026-04-05T12:00:00Z').getTime()
 const RECOVERY_CASE_ID = 'rc_test123'
 const BASE_URL = 'https://app.dunnmaster.com/update-payment'
 
@@ -49,7 +50,7 @@ describe('scheduleDunningEmails', () => {
   beforeEach(() => {
     jest.clearAllMocks()
     jest.useFakeTimers()
-    jest.setSystemTime(new Date('2026-04-05T12:00:00Z'))
+    jest.setSystemTime(MOCK_NOW)
 
     mockFindUnique.mockResolvedValue(mockRecoveryCase)
     mockResendSend.mockResolvedValue({ data: { id: 'resend_email_123' } })

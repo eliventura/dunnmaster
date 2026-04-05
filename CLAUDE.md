@@ -29,6 +29,13 @@ When using bash commands, always limit output:
 - `ls`: pipe to `| head -30`
 - Never display more than 30 lines of command output
 
+## Testing Rules
+
+- **Always verify tests pass during implementation.** After editing source or test files, check the PostToolUse hook output for test failures. If tests fail, stop and fix them before continuing.
+- When writing new code that has corresponding tests, run the relevant test suite and confirm green before moving on.
+- Integration tests that import Next.js API routes need `/** @jest-environment node */` docblock.
+- In jest.mock factories, never reference `const` variables directly — use arrow function wrappers to avoid SWC hoisting TDZ errors (e.g., `findUnique: (...args: unknown[]) => mockFn(...args)`).
+
 ## Code Style
 
 - **Modules:** ES Modules (`import`/`export`), not CommonJS

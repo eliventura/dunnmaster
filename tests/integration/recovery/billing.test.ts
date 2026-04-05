@@ -1,3 +1,7 @@
+/**
+ * @jest-environment node
+ */
+
 import { PRICING_TIERS } from '@/constants/pricing-tiers'
 
 // ── Mocks ────────────────────────────────────────────────
@@ -9,7 +13,14 @@ const mockPrisma = {
   },
 }
 
-jest.mock('@/lib/prisma', () => ({ prisma: mockPrisma }))
+jest.mock('@/lib/prisma', () => ({
+  prisma: {
+    subscriptionPlan: {
+      findUnique: (...args: unknown[]) => mockPrisma.subscriptionPlan.findUnique(...args),
+      update: (...args: unknown[]) => mockPrisma.subscriptionPlan.update(...args),
+    },
+  },
+}))
 
 const mockStripe = {
   subscriptions: {
@@ -18,7 +29,14 @@ const mockStripe = {
   },
 }
 
-jest.mock('@/lib/stripe', () => ({ stripe: mockStripe }))
+jest.mock('@/lib/stripe', () => ({
+  stripe: {
+    subscriptions: {
+      retrieve: (...args: unknown[]) => mockStripe.subscriptions.retrieve(...args),
+      update: (...args: unknown[]) => mockStripe.subscriptions.update(...args),
+    },
+  },
+}))
 
 jest.mock('@/lib/auth', () => ({
   auth: jest.fn().mockResolvedValue({ user: { id: 'user_001' } }),

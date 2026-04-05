@@ -1,3 +1,7 @@
+/**
+ * @jest-environment node
+ */
+
 import { GET } from '@/app/api/dashboard/metrics/route'
 
 // ── Mocks ────────────────────────────────────────────────
@@ -12,7 +16,17 @@ const mockPrisma = {
   },
 }
 
-jest.mock('@/lib/prisma', () => ({ prisma: mockPrisma }))
+jest.mock('@/lib/prisma', () => ({
+  prisma: {
+    business: {
+      findUnique: (...args: unknown[]) => mockPrisma.business.findUnique(...args),
+    },
+    recoveryCase: {
+      findMany: (...args: unknown[]) => mockPrisma.recoveryCase.findMany(...args),
+      count: (...args: unknown[]) => mockPrisma.recoveryCase.count(...args),
+    },
+  },
+}))
 
 const mockAuth = jest.fn()
 

@@ -1,3 +1,7 @@
+/**
+ * @jest-environment node
+ */
+
 import { generatePaymentUpdateToken, validatePaymentUpdateToken } from '@/services/payment-update'
 
 // ── Mocks ────────────────────────────────────────────────
@@ -10,7 +14,15 @@ const mockPrisma = {
   },
 }
 
-jest.mock('@/lib/prisma', () => ({ prisma: mockPrisma }))
+jest.mock('@/lib/prisma', () => ({
+  prisma: {
+    paymentUpdateSession: {
+      create: (...args: unknown[]) => mockPrisma.paymentUpdateSession.create(...args),
+      findUnique: (...args: unknown[]) => mockPrisma.paymentUpdateSession.findUnique(...args),
+      update: (...args: unknown[]) => mockPrisma.paymentUpdateSession.update(...args),
+    },
+  },
+}))
 
 const mockSignJWT = {
   setProtectedHeader: jest.fn().mockReturnThis(),

@@ -1,0 +1,310 @@
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
+
+exports[`DunningEmail step 1 - friendly notice matches snapshot 1`] = `
+<div>
+  <div
+    data-skip-in-text="true"
+    style="display: none; overflow: hidden; line-height: 1px; opacity: 0; max-height: 0; max-width: 0;"
+  >
+    There was a problem with your payment
+    <div>
+       ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿
+    </div>
+  </div>
+  <table
+    align="center"
+    border="0"
+    cellpadding="0"
+    cellspacing="0"
+    role="presentation"
+    width="100%"
+  >
+    <tbody>
+      <tr>
+        <td
+          style="background-color: rgb(249, 250, 251); font-family: sans-serif; padding: 40px 0px;"
+        >
+          <table
+            align="center"
+            border="0"
+            cellpadding="0"
+            cellspacing="0"
+            role="presentation"
+            style="max-width: 560px; background-color: rgb(255, 255, 255); padding: 40px; border-radius: 8px;"
+            width="100%"
+          >
+            <tbody>
+              <tr
+                style="width: 100%;"
+              >
+                <td>
+                  <img
+                    alt="Acme Corp"
+                    height="40"
+                    src="https://acme.com/logo.png"
+                    style="display: block; outline: none; text-decoration: none;"
+                    width="120"
+                  />
+                  <p
+                    style="font-size: 20px; line-height: 24px; font-weight: bold; margin-top: 16px; margin-bottom: 16px;"
+                  >
+                    Acme Corp
+                  </p>
+                  <hr
+                    style="width: 100%; border-top: 1px solid rgb(234, 234, 234);"
+                  />
+                  <p
+                    style="font-size: 14px; line-height: 24px; margin-top: 16px; margin-bottom: 16px;"
+                  >
+                    Hi 
+                    Jane Doe
+                    ,
+                  </p>
+                  <p
+                    style="font-size: 14px; line-height: 24px; margin-top: 16px; margin-bottom: 16px;"
+                  >
+                    We had trouble processing your recent payment. This can happen for a number of reasons and is usually easy to fix.
+                  </p>
+                  <a
+                    href="https://app.dunnmaster.com/update-payment/rc_123"
+                    style="line-height: 100%; text-decoration: none; display: inline-block; max-width: 100%; background-color: rgb(255, 102, 0); color: rgb(255, 255, 255); padding: 12px 24px 12px 24px; border-radius: 6px; font-size: 16px; font-weight: bold;"
+                    target="_blank"
+                  >
+                    <span>
+                      <!--[if mso]&gt;&lt;i style="mso-font-width:400%;mso-text-raise:18" hidden&gt;&#8202;&#8202;&#8202;&lt;/i&gt;&lt;![endif]-->
+                    </span>
+                    <span
+                      style="max-width: 100%; display: inline-block; line-height: 120%;"
+                    >
+                      Update Payment Method
+                    </span>
+                    <span>
+                      <!--[if mso]&gt;&lt;i style="mso-font-width:400%" hidden&gt;&#8202;&#8202;&#8202;&#8203;&lt;/i&gt;&lt;![endif]-->
+                    </span>
+                  </a>
+                  <hr
+                    style="width: 100%; border-top: 1px solid rgb(234, 234, 234);"
+                  />
+                  <p
+                    style="font-size: 12px; line-height: 24px; color: rgb(107, 114, 128); margin-top: 16px; margin-bottom: 16px;"
+                  >
+                    If you have any questions, please contact 
+                    Acme Corp
+                     support.
+                  </p>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+`;
+
+exports[`DunningEmail step 2 - urgency matches snapshot 1`] = `
+<div>
+  <div
+    data-skip-in-text="true"
+    style="display: none; overflow: hidden; line-height: 1px; opacity: 0; max-height: 0; max-width: 0;"
+  >
+    Action needed: update your payment method
+    <div>
+       ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿
+    </div>
+  </div>
+  <table
+    align="center"
+    border="0"
+    cellpadding="0"
+    cellspacing="0"
+    role="presentation"
+    width="100%"
+  >
+    <tbody>
+      <tr>
+        <td
+          style="background-color: rgb(249, 250, 251); font-family: sans-serif; padding: 40px 0px;"
+        >
+          <table
+            align="center"
+            border="0"
+            cellpadding="0"
+            cellspacing="0"
+            role="presentation"
+            style="max-width: 560px; background-color: rgb(255, 255, 255); padding: 40px; border-radius: 8px;"
+            width="100%"
+          >
+            <tbody>
+              <tr
+                style="width: 100%;"
+              >
+                <td>
+                  <img
+                    alt="Acme Corp"
+                    height="40"
+                    src="https://acme.com/logo.png"
+                    style="display: block; outline: none; text-decoration: none;"
+                    width="120"
+                  />
+                  <p
+                    style="font-size: 20px; line-height: 24px; font-weight: bold; margin-top: 16px; margin-bottom: 16px;"
+                  >
+                    Acme Corp
+                  </p>
+                  <hr
+                    style="width: 100%; border-top: 1px solid rgb(234, 234, 234);"
+                  />
+                  <p
+                    style="font-size: 14px; line-height: 24px; margin-top: 16px; margin-bottom: 16px;"
+                  >
+                    Hi 
+                    Jane Doe
+                    ,
+                  </p>
+                  <p
+                    style="font-size: 14px; line-height: 24px; margin-top: 16px; margin-bottom: 16px;"
+                  >
+                    We've been unable to process your payment. To avoid any interruption to your service, please update your payment method.
+                  </p>
+                  <a
+                    href="https://app.dunnmaster.com/update-payment/rc_123"
+                    style="line-height: 100%; text-decoration: none; display: inline-block; max-width: 100%; background-color: rgb(255, 102, 0); color: rgb(255, 255, 255); padding: 12px 24px 12px 24px; border-radius: 6px; font-size: 16px; font-weight: bold;"
+                    target="_blank"
+                  >
+                    <span>
+                      <!--[if mso]&gt;&lt;i style="mso-font-width:400%;mso-text-raise:18" hidden&gt;&#8202;&#8202;&#8202;&lt;/i&gt;&lt;![endif]-->
+                    </span>
+                    <span
+                      style="max-width: 100%; display: inline-block; line-height: 120%;"
+                    >
+                      Update Payment Method
+                    </span>
+                    <span>
+                      <!--[if mso]&gt;&lt;i style="mso-font-width:400%" hidden&gt;&#8202;&#8202;&#8202;&#8203;&lt;/i&gt;&lt;![endif]-->
+                    </span>
+                  </a>
+                  <hr
+                    style="width: 100%; border-top: 1px solid rgb(234, 234, 234);"
+                  />
+                  <p
+                    style="font-size: 12px; line-height: 24px; color: rgb(107, 114, 128); margin-top: 16px; margin-bottom: 16px;"
+                  >
+                    If you have any questions, please contact 
+                    Acme Corp
+                     support.
+                  </p>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+`;
+
+exports[`DunningEmail step 3 - final warning matches snapshot 1`] = `
+<div>
+  <div
+    data-skip-in-text="true"
+    style="display: none; overflow: hidden; line-height: 1px; opacity: 0; max-height: 0; max-width: 0;"
+  >
+    Final notice before account suspension
+    <div>
+       ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿
+    </div>
+  </div>
+  <table
+    align="center"
+    border="0"
+    cellpadding="0"
+    cellspacing="0"
+    role="presentation"
+    width="100%"
+  >
+    <tbody>
+      <tr>
+        <td
+          style="background-color: rgb(249, 250, 251); font-family: sans-serif; padding: 40px 0px;"
+        >
+          <table
+            align="center"
+            border="0"
+            cellpadding="0"
+            cellspacing="0"
+            role="presentation"
+            style="max-width: 560px; background-color: rgb(255, 255, 255); padding: 40px; border-radius: 8px;"
+            width="100%"
+          >
+            <tbody>
+              <tr
+                style="width: 100%;"
+              >
+                <td>
+                  <img
+                    alt="Acme Corp"
+                    height="40"
+                    src="https://acme.com/logo.png"
+                    style="display: block; outline: none; text-decoration: none;"
+                    width="120"
+                  />
+                  <p
+                    style="font-size: 20px; line-height: 24px; font-weight: bold; margin-top: 16px; margin-bottom: 16px;"
+                  >
+                    Acme Corp
+                  </p>
+                  <hr
+                    style="width: 100%; border-top: 1px solid rgb(234, 234, 234);"
+                  />
+                  <p
+                    style="font-size: 14px; line-height: 24px; margin-top: 16px; margin-bottom: 16px;"
+                  >
+                    Hi 
+                    Jane Doe
+                    ,
+                  </p>
+                  <p
+                    style="font-size: 14px; line-height: 24px; margin-top: 16px; margin-bottom: 16px;"
+                  >
+                    This is your final notice. Your account will be suspended if we cannot process your payment. Please update your payment method immediately.
+                  </p>
+                  <a
+                    href="https://app.dunnmaster.com/update-payment/rc_123"
+                    style="line-height: 100%; text-decoration: none; display: inline-block; max-width: 100%; background-color: rgb(255, 102, 0); color: rgb(255, 255, 255); padding: 12px 24px 12px 24px; border-radius: 6px; font-size: 16px; font-weight: bold;"
+                    target="_blank"
+                  >
+                    <span>
+                      <!--[if mso]&gt;&lt;i style="mso-font-width:400%;mso-text-raise:18" hidden&gt;&#8202;&#8202;&#8202;&lt;/i&gt;&lt;![endif]-->
+                    </span>
+                    <span
+                      style="max-width: 100%; display: inline-block; line-height: 120%;"
+                    >
+                      Update Payment Method
+                    </span>
+                    <span>
+                      <!--[if mso]&gt;&lt;i style="mso-font-width:400%" hidden&gt;&#8202;&#8202;&#8202;&#8203;&lt;/i&gt;&lt;![endif]-->
+                    </span>
+                  </a>
+                  <hr
+                    style="width: 100%; border-top: 1px solid rgb(234, 234, 234);"
+                  />
+                  <p
+                    style="font-size: 12px; line-height: 24px; color: rgb(107, 114, 128); margin-top: 16px; margin-bottom: 16px;"
+                  >
+                    If you have any questions, please contact 
+                    Acme Corp
+                     support.
+                  </p>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+`;

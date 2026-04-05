@@ -9,7 +9,14 @@ const mockPrisma = {
   },
 }
 
-jest.mock('@/lib/prisma', () => ({ prisma: mockPrisma }))
+jest.mock('@/lib/prisma', () => ({
+  prisma: {
+    recoveryCase: {
+      findMany: (...args: unknown[]) => mockPrisma.recoveryCase.findMany(...args),
+      count: (...args: unknown[]) => mockPrisma.recoveryCase.count(...args),
+    },
+  },
+}))
 
 // ── Helpers ──────────────────────────────────────────────
 

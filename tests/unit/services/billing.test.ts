@@ -9,7 +9,14 @@ const mockPrisma = {
   },
 }
 
-jest.mock('@/lib/prisma', () => ({ prisma: mockPrisma }))
+jest.mock('@/lib/prisma', () => ({
+  prisma: {
+    subscriptionPlan: {
+      findUnique: (...args: unknown[]) => mockPrisma.subscriptionPlan.findUnique(...args),
+      update: (...args: unknown[]) => mockPrisma.subscriptionPlan.update(...args),
+    },
+  },
+}))
 jest.mock('@/lib/stripe', () => ({ stripe: {} }))
 
 import { checkTierLimit, getUsagePercentage } from '@/services/billing'
