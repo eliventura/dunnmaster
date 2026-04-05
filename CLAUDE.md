@@ -42,3 +42,10 @@ When using bash commands, always limit output:
   - `UPPER_SNAKE_CASE` for constants
 - **Components:** Functional components with hooks (no class components)
 - **APIs:** Never use deprecated APIs
+
+## Active Technologies
+- TypeScript 5.x (strict mode) + Next.js 14+ (App Router), Prisma, Stripe SDK, (001-dunning-mvp)
+- PostgreSQL (Supabase) (001-dunning-mvp)
+
+## Recent Changes
+- 001-dunning-mvp: Added TypeScript 5.x (strict mode) + Next.js 14+ (App Router), Prisma, Stripe SDK,
